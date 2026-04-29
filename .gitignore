@@ -1,0 +1,11 @@
+# Ignorar dependencias pesadas
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignorar variables de entorno (Contraseñas)
+.env
+server/.env
+
+# Ignorar archivos de sistema
+.DS_Store
