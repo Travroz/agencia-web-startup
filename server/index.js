@@ -15,10 +15,16 @@ app.use(express.json());
 
 // Configuración del "Transportador" de correos
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // Si usas Outlook o Yahoo, esto cambia
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false, // true para puerto 465, false para otros puertos
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
+    pass: process.env.EMAIL_PASS,
+  },
+  tls: {
+    // Esto ayuda a evitar errores de conexión en ciertos entornos cloud
+    rejectUnauthorized: false
   }
 });
 
