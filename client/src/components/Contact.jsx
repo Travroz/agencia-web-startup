@@ -22,7 +22,7 @@ export default function Contact() {
 
     try {
       // Usamos fetch para enviar los datos al backend
-      const response = await fetch('http://localhost:5000/api/contacto', {
+      const response = await fetch('https://agencia-web-startup.onrender.com/api/contacto', {
         method: 'POST', // Método de envío
         headers: {
           'Content-Type': 'application/json',
