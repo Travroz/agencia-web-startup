@@ -16,7 +16,7 @@ app.post('/api/contacto', async (req, res) => {
   try {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev', // Resend te da este por defecto para probar
-      to: 'tu_correo_real@gmail.com', // A donde quieres que llegue
+      to: 'jygsolutionss@gmail.com', // A donde quieres que llegue
       subject: `🔥 Nueva Cotización: ${nombre}`,
       html: `<p>Nombre: ${nombre}</p><p>Email: ${email}</p><p>Mensaje: ${mensaje}</p>`
     });
