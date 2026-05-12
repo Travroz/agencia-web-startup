@@ -13,7 +13,7 @@ export default function App() {
       
       {/* Footer simple integrado */}
       <footer className="bg-[#0a0a0a] text-gray-500 py-8 text-center border-t border-gray-900">
-        <p>© {new Date().getFullYear()} TuAgencia. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} JyGsolutions. Todos los derechos reservados.</p>
       </footer>
     </div>
   )
